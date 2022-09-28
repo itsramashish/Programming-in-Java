@@ -1,0 +1,684 @@
+// public class JavaBasics {
+// public static void main(String args[]){
+
+//   }
+// }
+// // boilerplate code
+
+// // Print hello world using Java
+// public class JavaBasics {
+//   public static void main(String args[]){
+//     System.out.println("Hello world");
+//   }
+// }
+
+// Print this pattern
+/* 
+* * * *
+* * * 
+* * 
+* 
+*/
+/* public class JavaBasics {
+  public static void main(String args[]){
+    System.out.println("* * * *");
+    System.out.println("* * *");
+    System.out.println("* *");
+    System.out.println("*");
+  }
+} */
+
+
+// Variables in Java
+/* public class JavaBasics {
+  public static void main(String args[]){
+    int a = 10;
+    int b = 5;
+    System.out.println(a);
+    System.out.println(b);
+    String name = "Tony Stark";
+    System.out.println(name);
+
+    a = 20;
+    System.out.println(a);
+    a = b;
+    System.out.println(a);
+    String name2 = "Ram Ashish Yadav";
+    System.out.println(name2);
+
+  }
+} */
+
+
+// Datatypes in Java
+/* public class JavaBasics {
+  public static void main(String args[]){
+    byte b = 8;
+    System.out.println(b);
+    char ch = 'a';
+    System.out.println(ch);
+    boolean var = true;
+    System.out.println(var);
+    float price = (float) 10.5;
+    System.out.println(price);
+    int number = 25;
+    System.out.println(number);
+    // long
+    // double
+    // short 
+
+  }
+} */
+
+// Sum of two numbers
+/* public class JavaBasics {
+  public static void main(String args[]){
+    int a = 10;
+    int b = 5;
+    int sum = a+b;
+    System.out.println("Sum of given two number:");
+    System.out.println(sum);
+  }
+} */
+
+
+// taking input from user
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    // String input = sc.next();
+    // System.out.println(input);
+    
+    String str = sc.nextLine();
+    System.out.println(str);
+
+    int a = sc.nextInt();
+    System.out.println(a);
+
+    float f = sc.nextFloat();
+    System.out.println(f);
+
+    double dl = sc.nextDouble();
+    System.out.println(dl);
+
+    boolean bl = sc.nextBoolean();
+    System.out.println(bl);
+
+    byte bt = sc.nextByte();
+    System.out.println(bt);
+
+    long ln = sc.nextLong();
+    System.out.println(ln);
+
+    short sh = sc.nextShort();
+    System.out.println(sh);
+
+  }
+}
+ */
+
+
+// Sum of a & b taking input from user
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int sum = a + b;
+    System.out.println(sum);
+  }
+} */
+
+// Product of a & b
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int Product = a * b;
+    System.out.println(Product);
+  }
+}
+ */
+
+// Calculate Area of a circle
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    float rad = sc.nextFloat();
+    float area = 3.14f * rad * rad;
+    // agar hum decimal value ke saath f na likhe to compiler usko double smajh leta hai
+    System.out.println(area);
+  }
+} */
+
+// Type conversion 
+/* 
+import java.util.*;
+
+public class JavaBasics{
+  public static void main(String args[]){
+
+// byte -> short -> int -> float -> long -> double
+    // int a = 10;
+    // long b = a;
+    // System.out.println(b);
+
+    Scanner sc = new Scanner(System.in);
+    float number = sc.nextInt();
+    System.out.println(number);
+  }
+}
+ */
+
+// Type Casting::
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner (System.in);
+    float a = 25.12f;
+    int b = (int) a;  // float to int
+    System.out.println(b);
+
+    float marks = 99.999f;
+    int marks2 = (int) marks; // float to int
+    System.out.println(marks2);
+
+    char ch = 'a';
+    int number = ch;
+    System.out.println(number);
+
+  }
+} */
+
+// Type Promotion
+/*import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    // char a = 'a';
+    // char b = 'b';
+    // char c = a - b; // not possible 
+    // System.out.println((int)b);
+    // System.out.println((int)a);
+    // System.out.println(b-a);
+
+    // short a = 5;
+    // byte b = 25;
+    // char c = 'c';
+    // byte bt = (byte)(a + b + c);
+
+    int a = 10;
+    float b = 20.25f;
+    long c = 25;
+    double d = 30;
+    // int ans = a + b + c + d; // not possible
+    double ans = a + b + c + d;
+    System.out.println(ans);
+
+  }
+}
+*/
+
+// Relational Operators
+// import java.util.*;
+/* public class JavaBasics {
+  public static void main(String args[]) {
+    // == operator
+      int A = 10;
+      int B = 10;
+      System.out.println(A == B);
+      
+      // != operator
+      int C = 5;
+      int D = 4;
+      System.out.println(C != D);
+
+      // greater than > operator 
+      int E = 5;
+      int F = 4;
+      System.out.println(E > F);
+
+      // less than < operator 
+      int G = 5;
+      int H = 4;
+      System.out.println(G < H);
+
+      // greater than equal to >=
+      // less than equal to <= 
+}
+}
+ */
+
+// Income tax calculator
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int income = sc.nextInt();
+    int tax;
+
+    if (income < 500000) {
+      tax = 0;
+    }
+    else if (income >= 500000 && income < 1000000) {
+      tax = (int) (income * 0.2);
+    }
+    else {
+      tax = (int) (income * 0.3);
+    }
+    
+    System.out.println("Your tax is:: " + tax);
+}
+} */
+
+// Print the largest of 3 numbers
+/* import java.util.*;
+
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int A = sc.nextInt();
+    int B = sc.nextInt();
+    int C = sc.nextInt();
+
+    if ((A >= B) && (A >= C)) {
+      System.out.println("Largest number is " + A);
+    }
+    else if (B >= C) {
+      System.out.println("Largest is " + B);
+    }
+    else {
+      System.out.println("Largest is " + C);
+    }
+
+}
+}
+
+ */
+
+/* Ternary operator */
+
+// Check whether a number is even or odd using ternary operator
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    int number = 4;
+    
+    // ternary operator
+    String type = ((number % 2) == 0) ? "Even" : "Odd";
+    System.out.println(type);
+}
+} */
+
+// Check if a student will pass or fail
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    int marks = 67;
+    String reportCard = (marks >= 33 )? "Pass" : "Fail";        
+    System.out.println(reportCard);
+  }
+}
+ */
+
+// Switch Statement
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    int number = 2;
+    switch (number) {
+      case 1:
+        System.out.println("Samosa");
+        break;
+      case 2:
+        System.out.println("Burger");
+        break;
+      case 3:
+        System.out.println("Mango Shake");
+        break;
+      default:
+        System.out.println("We wake up");
+        break;
+
+    }
+}
+} */
+
+// Simple Claculator
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a: ");
+    int a = sc.nextInt();
+    System.out.println("Enter b: ");
+    int b = sc.nextInt();
+    System.out.println("Enter operator: ");
+    char operator = sc.next().charAt(0);
+    
+    switch (operator) {
+      case '+':
+        System.out.println(a + b);
+        break;
+      case '-':
+        System.out.println(a - b);
+        break;
+      case '*':
+        System.out.println(a * b);
+        break;
+      case '/':
+        System.out.println(a / b);
+        break;
+      case '%':
+        System.out.println(a % b);
+        break;
+      default:
+        System.out.println("Wrong operator");
+        break;
+    }
+}
+}
+ */
+
+// 1: Print 1 to n;
+// import java.util.*;
+
+// public class JavaBasics {
+//   public static void main(String args[]) {
+//     for (int i = 1; i <= 10; i++) {
+//       System.out.println(i);
+//     }
+//   }
+// }
+
+/* 
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+ */
+
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print(j + " ");
+      }
+      System.out.println();
+    }        
+}
+} */
+
+// to print multiplication table;
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    for (int i = 1; i <= 10; i++) {
+      int result = n * i;
+      System.out.println(n + "*" + i + " = " + result);
+    }
+}
+} */
+
+// loops is Java
+// while loop
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int count = 0;
+    while (count < 10) {
+      System.out.println("Hello World");
+      count++;
+    }
+  }
+}
+ */
+
+// print numbers from 1 to 10;
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int counter = 1;
+    while (counter < 11) {
+      System.out.print(counter + " ");
+      counter++;
+    }
+  }
+}
+ */
+
+// print numbers from 1 to n
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int count = 1;
+    while (count < n) {
+      System.out.println(count);
+      count++;
+    }
+  }
+} */
+
+// print sum of first n natural numbers using while loop
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int sum = 0;
+    int i = 1;
+    while (i <= n) {
+      sum += i;
+      i++;
+    }   
+    System.out.println("Sum is: " + sum);
+}
+} */
+
+// for  loops
+// print sum of 1 to n using for loop
+/* import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      int sum = 0;
+      for (int i = 1; i <= n; i++) {
+        sum += i;
+      }
+      System.out.println("Sum is: " + sum);
+}
+} */
+
+/* 
+* * * *
+* * * *
+* * * *
+* * * *
+ */
+/* import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      for(int line=1; line <= 4; line++){
+        System.out.println("* * * *");
+      }
+}
+}
+ */
+
+// Print reverse of a number
+// n = 10899;
+/* import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      int n = 10899;
+      
+      while (n > 0) {
+        int lastdigit = n % 10;
+        System.out.print(lastdigit);
+        n /= 10;
+      }
+      System.out.println();
+}
+} */
+
+// Reverse the given number
+/* public class JavaBasics {
+  public static void main(String args[]) {
+    int n = 10899;
+    int rev = 0;
+    while (n > 0) {
+      int lastdigit = n % 10;
+      rev = (rev * 10) + lastdigit;
+      n /= 10;
+    }
+    System.out.println(rev);
+  }
+}
+ */
+
+// do while loop use
+/* public class JavaBasics {
+  public static void main(String args[]) {
+    int counter = 0;
+    do {
+      System.out.println("Hello world");
+      counter++;
+    }while(counter < 10);
+  }
+} */
+
+// break statement 
+/* public class JavaBasics {
+  public static void main(String args[]) {
+    for (int i = 0; i <= 5; i++) {
+      if (i == 3) {
+        break;
+      }
+      System.out.println(i);
+    }
+    System.out.println("I am out of the loop.");
+  }
+}
+ */
+/* import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+        do{
+          System.out.print("Enter your number: ");
+          int n = sc.nextInt();
+          if(n % 10 == 0){
+            break;
+          }
+          System.out.println(n);
+        } while (true);
+}
+} */
+
+// continue statement
+// to skip an iteration
+/* import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      for (int i = 1; i <= 5; i++) {
+        if (i == 3) {
+          continue;
+        }
+        System.out.println(i);
+      }  
+}
+}
+*/
+
+// Display all number entered by user except multiples of 10
+/* import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      do{
+        System.out.print("Enter your number: ");
+        int n = sc.nextInt();
+
+        if(n % 10 == 0){
+          continue;
+        }
+        System.out.println("Number is: " + n);
+      } while (true);
+}
+}
+ */
+
+// Check if a number is prime or not 
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    if (n == 2) {
+      System.out.println(n + " is Prime");
+    } 
+    else {
+      boolean isPrime = true;
+      for (int i = 2; i <= n - 1; i++) {
+        if (n % i == 0) {
+          isPrime = false;
+        }
+      }
+      if (isPrime == true) {
+        System.out.println(n + " is Prime");
+      } else {
+        System.out.println(n + " is not Prime");
+      }
+    }
+  }
+}
+  */
+/* import java.util.*;
+  public class JavaBasics {
+    public static void main(String args[]) {
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      if (n == 2) {
+        System.out.println(n + " is Prime");
+      } 
+      else {
+        boolean isPrime = true;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+          if (n % i == 0) {
+            isPrime = false;
+          }
+        }
+        if (isPrime == true) {
+          System.out.println(n + " is Prime");
+        } else {
+          System.out.println(n + " is not Prime");
+        }
+      }
+    }
+} 
+*/
