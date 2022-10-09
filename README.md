@@ -1,4 +1,4 @@
-# Java-Basics
+# Java-Programming Language
 In this repository you will get all the basics of java programming language.
 What you can learn from this repository::
 1) You will learn about DataTypes in java.
