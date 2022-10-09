@@ -1,1 +1,323 @@
+// boilerplate code
+/* public class JavaBasics {
+public static void main(String args[]){
+
+  }
+} */
+
+
+// Print hello world using Java
+/* public class JavaBasics {
+  public static void main(String args[]){
+    System.out.println("Hello world");
+  }
+} */
+
+
+
+// Print this pattern
+/* 
+* * * *
+* * * 
+* * 
+* 
+*/
+/* public class JavaBasics {
+  public static void main(String args[]){
+    System.out.println("* * * *");
+    System.out.println("* * *");
+    System.out.println("* *");
+    System.out.println("*");
+  }
+} */
+
+
+// Variables in Java
+/* public class JavaBasics {
+  public static void main(String args[]){
+    int a = 10;
+    int b = 5;
+    System.out.println(a);
+    System.out.println(b);
+    String name = "Tony Stark";
+    System.out.println(name);
+
+    a = 20;
+    System.out.println(a);
+    a = b;
+    System.out.println(a);
+    String name2 = "Ram Ashish Yadav";
+    System.out.println(name2);
+
+  }
+} */
+
+
+
+// Datatypes in Java
+/* public class JavaBasics {
+  public static void main(String args[]){
+    byte b = 8;
+    System.out.println(b);
+    char ch = 'a';
+    System.out.println(ch);
+    boolean var = true;
+    System.out.println(var);
+    float price = (float) 10.5;
+    System.out.println(price);
+    int number = 25;
+    System.out.println(number);
+    // long
+    // double
+    // short 
+
+  }
+} */
+
+
+
+// Sum of two numbers
+/* public class JavaBasics {
+  public static void main(String args[]){
+    int a = 10;
+    int b = 5;
+    int sum = a+b;
+    System.out.println("Sum of given two number:");
+    System.out.println(sum);
+  }
+} */
+
+
+
+// taking input from user
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    // String input = sc.next();
+    // System.out.println(input);
+    
+    String str = sc.nextLine();
+    System.out.println(str);
+
+    int a = sc.nextInt();
+    System.out.println(a);
+
+    float f = sc.nextFloat();
+    System.out.println(f);
+
+    double dl = sc.nextDouble();
+    System.out.println(dl);
+
+    boolean bl = sc.nextBoolean();
+    System.out.println(bl);
+
+    byte bt = sc.nextByte();
+    System.out.println(bt);
+
+    long ln = sc.nextLong();
+    System.out.println(ln);
+
+    short sh = sc.nextShort();
+    System.out.println(sh);
+  }
+}
+*/
+
+
+
+// Sum of a & b taking input from user
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int sum = a + b;
+    System.out.println(sum);
+  }
+} */
+
+
+
+// Product of a & b
+/* 
+import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int Product = a * b;
+    System.out.println(Product);
+  }
+}
+ */
+
+
+
+// Calculate Area of a circle
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    float rad = sc.nextFloat();
+    float area = 3.14f * rad * rad;
+    // agar hum decimal value ke saath f na likhe to compiler usko double smajh leta hai
+    System.out.println(area);
+  }
+} */
+
+
+
+// Type conversion 
+/* 
+import java.util.*;
+public class JavaBasics{
+  public static void main(String args[]){
+// byte -> short -> int -> float -> long -> double
+    // int a = 10;
+    // long b = a;
+    // System.out.println(b);
+    Scanner sc = new Scanner(System.in);
+    float number = sc.nextInt();
+    System.out.println(number);
+  }
+}
+ */
+
+
+
+// Type Casting::
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    Scanner sc = new Scanner (System.in);
+    float a = 25.12f;
+    int b = (int) a;  // float to int
+    System.out.println(b);
+    float marks = 99.999f;
+    int marks2 = (int) marks; // float to int
+    System.out.println(marks2);
+    char ch = 'a';
+    int number = ch;
+    System.out.println(number);
+  }
+} */
+
+
+
+// Type Promotion
+/*import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]){
+    // char a = 'a';
+    // char b = 'b';
+    // char c = a - b; // not possible 
+    // System.out.println((int)b);
+    // System.out.println((int)a);
+    // System.out.println(b-a);
+    // short a = 5;
+    // byte b = 25;
+    // char c = 'c';
+    // byte bt = (byte)(a + b + c);
+    int a = 10;
+    float b = 20.25f;
+    long c = 25;
+    double d = 30;
+    // int ans = a + b + c + d; // not possible
+    double ans = a + b + c + d;
+    System.out.println(ans);
+  }
+}
+*/
+
+
+
+// Relational Operators
+// import java.util.*;
+/* public class JavaBasics {
+    public static void main(String args[]) {
+    // == operator
+      int A = 10;
+      int B = 10;
+      System.out.println(A == B);
+      // != operator
+      int C = 5;
+      int D = 4;
+      System.out.println(C != D);
+      // greater than > operator 
+      int E = 5;
+      int F = 4;
+      System.out.println(E > F);
+      // less than < operator 
+      int G = 5;
+      int H = 4;
+      System.out.println(G < H);
+      // greater than equal to >=
+      // less than equal to <= 
+    }
+}
+ */
+
+
+
+// Simple Income tax calculator
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int income = sc.nextInt();
+    int tax;
+    if (income < 500000) {
+      tax = 0;
+    }
+    else if (income >= 500000 && income < 1000000) {
+      tax = (int) (income * 0.2);
+    }
+    else {
+      tax = (int) (income * 0.3);
+    } 
+    System.out.println("Your tax is:: " + tax);
+}
+} */
+
+
+
+// Print the largest of 3 numbers
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int A = sc.nextInt();
+    int B = sc.nextInt();
+    int C = sc.nextInt();
+    if ((A >= B) && (A >= C)) {
+      System.out.println("Largest number is " + A);
+    }
+    else if (B >= C) {
+      System.out.println("Largest is " + B);
+    }
+    else {
+      System.out.println("Largest is " + C);
+    }
+}
+}
+*/
+
+
+
+/* Ternary operator */
+// Check whether a number is even or odd using ternary operator
+/* import java.util.*;
+public class JavaBasics {
+  public static void main(String args[]) {
+    int number = 4;
+    
+    // ternary operator
+    String type = ((number % 2) == 0) ? "Even" : "Odd";
+    System.out.println(type);
+}
+} */
 
